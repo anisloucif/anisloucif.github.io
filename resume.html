@@ -4,22 +4,164 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Anis Loucif | À propos & CV</title>
-  <meta name="description" content="Portfolio BTS SIO SLAM - Anis Loucif">
+
+  <title>Parcours - Anis Loucif</title>
+  <meta name="description" content="Parcours & formation - BTS SIO SLAM - Anis Loucif">
   <meta name="keywords" content="BTS SIO, SLAM, Portfolio, Développement, PHP, SQL, Python">
 
+  
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
+  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
+  
   <link href="assets/css/main.css" rel="stylesheet">
+
+  
+  <style>
+    :root {
+      --bg0: #070A12;
+      --bg1: #0B1020;
+      --card: rgba(255, 255, 255, 0.06);
+      --stroke: rgba(255, 255, 255, 0.14);
+      --text: rgba(255, 255, 255, 0.92);
+      --muted: rgba(255, 255, 255, 0.70);
+      --c1: #7C3AED;
+      --c2: #06B6D4;
+      --c3: #22C55E;
+      --c4: #F97316;
+    }
+
+    body {
+      background:
+        radial-gradient(900px 520px at 20% 10%, rgba(124, 58, 237, .20), transparent 60%),
+        radial-gradient(900px 520px at 80% 0%, rgba(6, 182, 212, .18), transparent 60%),
+        radial-gradient(900px 520px at 70% 100%, rgba(249, 115, 22, .12), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      color: var(--text);
+    }
+
+    .header.light-background {
+      background: rgba(10, 14, 25, .55) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, .10) !important;
+      backdrop-filter: blur(12px);
+    }
+
+    .header .navmenu a,
+    .header .sitename {
+      color: rgba(255, 255, 255, .92) !important;
+    }
+
+    .header .navmenu a.active {
+      color: white !important;
+    }
+
+    .page-title {
+      background: transparent !important;
+      padding-top: 28px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, var(--c2), var(--c1), var(--c4));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .glass-card {
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 20px 70px rgba(0, 0, 0, .35);
+    }
+
+    .pill {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, .84);
+      font-size: 13px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(6, 182, 212, .8), rgba(124, 58, 237, .7), rgba(249, 115, 22, .6));
+      opacity: .7;
+      border-radius: 999px;
+    }
+
+    .t-item {
+      position: relative;
+      padding: 14px 14px 14px 18px;
+      margin-bottom: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: 18px;
+    }
+
+    .t-item::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 18px;
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--c2), var(--c1));
+      box-shadow: 0 0 16px rgba(124, 58, 237, .55);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .badge-soft {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      background: rgba(255, 255, 255, .06);
+      margin: 4px 6px 0 0;
+      font-size: 12px;
+      color: rgba(255, 255, 255, .85);
+    }
+
+    .footer {
+      background: transparent !important;
+      border-top: 1px solid rgba(255, 255, 255, .10);
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -30,122 +172,180 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="CV.html" class="active">À propos</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="resume.html" class="active">Parcours</a></li>
           <li><a href="services.html">Compétences</a></li>
-          <li><a href="Portfolio.html">Projets</a></li>
+          <li><a href="portfolio.html">Projets</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
-        <a href="https://github.com/anisloucif" class="github" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/anis-loucif" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/anisloucif" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anis-loucif" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
   </header>
 
   <main class="main">
+
+    
+    <div class="page-title">
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
+        <div class="d-flex flex-column gap-2">
+          <h1 class="mb-0"><span class="gradient-text">Parcours</span> & progression</h1>
+          <p class="muted mb-0">Mon chemin scolaire + mes expériences, avec un focus SLAM (développement).</p>
+          <div>
+            <span class="pill"><i class="bi bi-mortarboard"></i> BTS SIO SLAM</span>
+            <span class="pill"><i class="bi bi-code-slash"></i> Dev Web</span>
+            <span class="pill"><i class="bi bi-database"></i> SQL / MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
     <section class="section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 align-items-start">
-          <div class="col-lg-8">
-            <h1 class="mb-2">Anis Loucif</h1>
-            <p class="lead mb-3">Étudiant en BTS SIO — option SLAM (1ère année)</p>
+        <div class="row gy-4">
+          
+          <div class="col-lg-7">
+            <div class="glass-card" data-aos="fade-up" data-aos-delay="120">
+              <h2 class="h4 mb-3"><i class="bi bi-clock-history me-2"></i>Timeline</h2>
 
-            <div class="mb-4">
-              <h3>Profil</h3>
-              <p>
-                Passionné par le développement web et la création d’applications, je recherche un stage de 6 semaines
-                pour mettre mes compétences en programmation, bases de données et conception logicielle au service de projets concrets.
-                Sérieux, motivé et autonome, je souhaite rejoindre une équipe dynamique pour apprendre, contribuer et évoluer dans un environnement professionnel.
-              </p>
-              <p class="mb-0"><strong>Stage recherché :</strong> Développement web / conception logicielle — <strong>18 mai 2026 → 26 juin 2026</strong>.</p>
+              <div class="timeline">
+
+                <div class="t-item" data-aos="fade-up" data-aos-delay="140">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <strong>2025 – 2027 (en cours) — BTS SIO option SLAM</strong>
+                    <span class="muted">Lycée Léonard de Vinci — Melun</span>
+                  </div>
+                  <div class="muted mt-2">
+                    Développement d’applications / web, logique, bases de données, projets.
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge-soft">HTML / CSS / JS</span>
+                    <span class="badge-soft">PHP</span>
+                    <span class="badge-soft">SQL / MySQL</span>
+                    <span class="badge-soft">Python</span>
+                    <span class="badge-soft">Git / GitHub</span>
+                  </div>
+                </div>
+
+                <div class="t-item" data-aos="fade-up" data-aos-delay="170">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <strong>2022 – 2023 — BTS GPME (niveau)</strong>
+                    <span class="muted">Lycée François Truffaut — Bondoufle</span>
+                  </div>
+                  <div class="muted mt-2">
+                    Organisation, gestion, communication et rigueur (transférable en informatique).
+                  </div>
+                </div>
+
+                <div class="t-item" data-aos="fade-up" data-aos-delay="200">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <strong>2019 – 2022 — Bac Pro Gestion-Administration</strong>
+                    <span class="muted">Lycée Paul Langevin — Sainte-Geneviève-des-Bois</span>
+                  </div>
+                  <div class="muted mt-2">
+                    Mention Bien — bases solides en administratif, méthodes et outils.
+                  </div>
+                </div>
+
+              </div>
             </div>
 
-            <div class="mb-4">
-              <h3>Formation</h3>
-              <ul class="mb-0">
-                <li><strong>2025 (en cours)</strong> — BTS SIO, option SLAM — Lycée Léonard de Vinci (Melun)</li>
-                <li><strong>2022 – 2023</strong> — Niveau BTS GPME — Lycée François Truffaut (Bondoufle)</li>
-                <li><strong>2019 – 2022</strong> — Bac Pro Gestion-Administration (Mention Bien) — Lycée Paul Langevin (Sainte-Geneviève-des-Bois)</li>
-              </ul>
-            </div>
-
-            <div class="mb-4">
-              <h3>Expériences</h3>
-              <ul class="mb-0">
-                <li><strong>Castorama (Villabé)</strong> — Équipier logistique (intérim) — 03/25 à 05/25</li>
-                <li><strong>Dierre France (Les Ulis)</strong> — Préparateur de commandes (intérim) — 10/24 à 12/24</li>
-                <li><strong>Amazon (Brétigny-sur-Orge)</strong> — Préparateur de commandes (intérim) — 08/23</li>
-                <li><strong>Stages (2020–2022)</strong> — Chargé du service administratif et financier (Sun Renov / ASGPAS France / Programme de Réussite Éducatif / Bil’s Conduite)</li>
-              </ul>
-            </div>
-
-            <div class="mb-4">
-              <h3>Savoir-être</h3>
-              <ul class="mb-0">
-                <li>Proactif et autonome</li>
-                <li>Sens du relationnel</li>
-                <li>Gestion du temps</li>
-                <li>Capacité d’adaptation</li>
-                <li>Créativité</li>
-                <li>Résolution de problèmes</li>
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4">
-            <div class="p-4 border rounded-3 bg-white">
-              <h4 class="mb-3">Infos rapides</h4>
-              <ul class="list-unstyled mb-3">
-                <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Grigny (91)</li>
-                <li class="mb-2"><i class="bi bi-person me-2"></i>21 ans</li>
-                <li class="mb-2"><i class="bi bi-car-front me-2"></i>Permis B</li>
-                <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="mailto:anis.loucif91@gmail.com">anis.loucif91@gmail.com</a></li>
-                <li class="mb-2"><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/anis-loucif" target="_blank" rel="noopener">LinkedIn</a></li>
-                <li class="mb-2"><i class="bi bi-github me-2"></i><a href="https://github.com/anisloucif" target="_blank" rel="noopener">GitHub</a></li>
-              </ul>
-
-              <h4 class="mb-2">Langues</h4>
-              <ul class="mb-3">
-                <li>Français (langue maternelle)</li>
-                <li>Anglais (B2)</li>
-                <li>Espagnol (A1)</li>
-                <li>Arabe (courant)</li>
-              </ul>
-
-              <h4 class="mb-2">Centres d’intérêt</h4>
-              <ul class="mb-0">
-                <li>Sport (football, running)</li>
-                <li>Jeux vidéos (FPS, sport)</li>
-                <li>Voyages</li>
-                <li>Création graphique</li>
+            <div class="glass-card mt-4" data-aos="fade-up" data-aos-delay="220">
+              <h2 class="h4 mb-3"><i class="bi bi-graph-up-arrow me-2"></i>Mon axe “SLAM” (logique)</h2>
+              <ul class="muted mb-0">
+                <li>Structurer un projet : pages claires, navigation propre, cohérence.</li>
+                <li>Donner du “ressenti pro” : animations fluides, couleurs, UI moderne.</li>
+                <li>Progression continue : SQL (requêtes), PHP (logique), JS (interactions).</li>
               </ul>
             </div>
           </div>
 
+          
+          <div class="col-lg-5">
+            <div class="glass-card" data-aos="fade-up" data-aos-delay="140">
+              <h2 class="h4 mb-3"><i class="bi bi-briefcase me-2"></i>Expériences</h2>
+
+              <div class="t-item" data-aos="fade-up" data-aos-delay="160">
+                <strong>Castorama — Équipier logistique (intérim)</strong>
+                <div class="muted">Villabé • 03/2025 → 05/2025</div>
+              </div>
+
+              <div class="t-item" data-aos="fade-up" data-aos-delay="190">
+                <strong>Dierre France — Préparateur de commandes (intérim)</strong>
+                <div class="muted">Les Ulis • 10/2024 → 12/2024</div>
+              </div>
+
+              <div class="t-item" data-aos="fade-up" data-aos-delay="220">
+                <strong>Amazon — Préparateur de commandes (intérim)</strong>
+                <div class="muted">Brétigny-sur-Orge • 08/2023</div>
+              </div>
+
+              <div class="t-item" data-aos="fade-up" data-aos-delay="250">
+                <strong>Stages (administratif / gestion)</strong>
+                <div class="muted">2020 → 2022 • (Sun Renov / ASGPAS / PRE / Bil’s Conduite)</div>
+              </div>
+
+              <div class="muted mt-2">
+                Ces expériences m’ont apporté : rigueur, organisation, fiabilité, gestion du temps.
+              </div>
+            </div>
+
+            <div class="glass-card mt-4" data-aos="fade-up" data-aos-delay="180">
+              <h2 class="h4 mb-3"><i class="bi bi-bullseye me-2"></i>Objectifs (court terme)</h2>
+              <ul class="muted mb-0">
+                <li>Construire des projets visibles (portfolio + mini projets web).</li>
+                <li>Monter en niveau sur SQL/MySQL + PHP (logique back-end).</li>
+                <li>Développer l’aspect “pro” : UX, structure, clarté, performance.</li>
+              </ul>
+            </div>
+
+            <div class="glass-card mt-4" data-aos="fade-up" data-aos-delay="220">
+              <h2 class="h4 mb-3"><i class="bi bi-link-45deg me-2"></i>Liens</h2>
+              <div class="d-flex flex-column gap-2">
+                <a class="muted" href="https://github.com/anisloucif" target="_blank" rel="noopener"><i class="bi bi-github me-2"></i>github.com/anisloucif</a>
+                <a class="muted" href="https://www.linkedin.com/in/anis-loucif" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>linkedin.com/in/anis-loucif</a>
+                <a class="muted" href="contact.html"><i class="bi bi-envelope me-2"></i>Me contacter</a>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
     </section>
+
   </main>
 
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© <strong class="px-1 sitename">Anis Loucif</strong> — Portfolio BTS SIO SLAM</p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Anis Loucif</strong> <span>— Portfolio BTS SIO SLAM</span></p>
       </div>
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
+  <div id="preloader"></div>
+
+  
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  
   <script src="assets/js/main.js"></script>
 
 </body>
